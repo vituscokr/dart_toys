@@ -1,6 +1,46 @@
 # web
 
-A new Flutter project.
+flutter web project 
+
+```shell
+flutter create web
+cd web
+```
+
+웹 지원 하도록 설정 하기 위해서는 아래와 같이 명령을 입력한다. 
+```shell
+flutter config --enable-web
+```
+웹 지원 하지 않도록 설정 하기 위해서는 아래의 명령어를 입력한다. 
+```shell
+flutter config --no-enable-web
+```
+대응되는 디바이스를 확인 하는 명령어입니다.
+
+```shell
+flutter devices 
+```
+웹앱 시작은 아래의 명령어로 
+
+```shell
+flutter run -d chrome 
+```
+
+빌드하기 
+```shell
+flutter build web
+
+```
+web/build/web
+
+```shell
+cd build/web 
+python3 -m http.server 8000
+```
+
+
+
+
 
 ## Getting Started
 
